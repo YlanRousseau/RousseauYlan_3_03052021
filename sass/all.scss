@@ -1,0 +1,44 @@
+header {
+    padding: 1rem;
+    box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
+    position: relative;
+    &_logo {
+        text-align: center;
+        font-family: Shrikhand;
+        margin: 0;
+    }
+}
+
+footer {
+    background-color: #353535;
+    padding: 1rem;
+    color: white;
+    &_h3 {
+        margin: 0;
+        font-family: Shrikhand;
+        font-size: 1.1rem;
+    }
+    &_ul {
+        list-style: none;
+        color: white;
+        padding: 0;
+    }
+    &_li {
+        list-style: none;
+        color: white;
+    }
+    &_a {
+        color: white;
+        text-decoration: none;
+    }
+    &_li {
+        margin-top: 0.5rem;
+    }
+    &_icon1 {
+        margin-right: 0.45rem;
+    }
+    &_icon2 {
+        font-size: 0.85rem;
+        margin-right: 0.2rem;
+    }
+}

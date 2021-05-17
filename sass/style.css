@@ -89,11 +89,6 @@ footer .footer_icon2 {
   margin: auto;
 }
 
-.fonctionnement {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .fonctionnement > button {
   margin-top: 1rem;
   width: 90%;
@@ -101,16 +96,37 @@ footer .footer_icon2 {
   border: 1px solid white;
   border-radius: 1rem;
 }
-.fonctionnement > ol {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
 .fonctionnement .tutoriel {
-  padding: 1.5rem 3rem 1.5rem 1rem;
+  counter-increment: my-awesome-counter;
+  padding: 1.5rem;
   background-color: #f6f6f6;
   border-radius: 1.25rem;
   margin: 1.5rem 0 0 -2rem;
+  position: relative;
+  box-shadow: 0.25rem 0.25rem 0.5rem #0000002e;
+}
+.fonctionnement > ol {
+  counter-reset: my-awesome-counter;
+  margin: auto;
+  list-style: none;
+}
+
+.tutoriel::before {
+  content: counter(my-awesome-counter);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  background-color: #9356DC;
+  color: white;
+  height: 1.5rem;
+  width: 1.5rem;
+  position: absolute;
+  left: -10px;
+}
+
+.tuto_icon {
+  padding: 0 1.5rem 0 1rem;
 }
 
 #select-resto {

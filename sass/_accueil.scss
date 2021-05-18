@@ -44,6 +44,9 @@ $tertiary-colors:#99E2D0;
 .contenant {
     max-width: 1150px;
     margin: auto;
+    >h2 {
+        margin: 0;
+    }
 }
 
 .fonctionnement {
@@ -62,11 +65,19 @@ $tertiary-colors:#99E2D0;
         margin: 1.5rem 0 0 -2rem;
         position: relative;
         box-shadow: 0.25rem 0.25rem 0.5rem #0000002e;
+        @media (min-width: 1024px) {
+            margin: 1.5rem;
+            flex: 1;
+        }
     }
     >ol {
         counter-reset: my-awesome-counter;
         margin: auto;
         list-style: none;
+        @media (min-width: 1024px) {
+            display: flex;
+            padding: 0;
+        }
     }
 }
 
@@ -92,6 +103,14 @@ $tertiary-colors:#99E2D0;
     padding: 2rem 1rem;
     align-content: center;
     background-color: #f6f6f6;
+    .li_resto {
+        @media (min-width: 1024px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 2rem;
+            row-gap: 2rem;
+        }
+    }
     .resto {
         display: block;
         position: relative;
@@ -103,6 +122,9 @@ $tertiary-colors:#99E2D0;
         margin: 2rem 0;
         border-radius: 1rem;
         text-decoration: none;
+        @media (min-width: 1024px) {
+            margin: 0;
+        }
         .resto_badge {
             padding: .5rem;
             position: absolute;

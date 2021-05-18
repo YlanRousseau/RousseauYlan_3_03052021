@@ -88,6 +88,9 @@ footer .footer_icon2 {
   max-width: 1150px;
   margin: auto;
 }
+.contenant > h2 {
+  margin: 0;
+}
 
 .fonctionnement > button {
   margin-top: 1rem;
@@ -105,10 +108,22 @@ footer .footer_icon2 {
   position: relative;
   box-shadow: 0.25rem 0.25rem 0.5rem #0000002e;
 }
+@media (min-width: 1024px) {
+  .fonctionnement .tutoriel {
+    margin: 1.5rem;
+    flex: 1;
+  }
+}
 .fonctionnement > ol {
   counter-reset: my-awesome-counter;
   margin: auto;
   list-style: none;
+}
+@media (min-width: 1024px) {
+  .fonctionnement > ol {
+    display: flex;
+    padding: 0;
+  }
 }
 
 .tutoriel::before {
@@ -134,6 +149,14 @@ footer .footer_icon2 {
   align-content: center;
   background-color: #f6f6f6;
 }
+@media (min-width: 1024px) {
+  #select-resto .li_resto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+}
 #select-resto .resto {
   display: block;
   position: relative;
@@ -145,6 +168,11 @@ footer .footer_icon2 {
   margin: 2rem 0;
   border-radius: 1rem;
   text-decoration: none;
+}
+@media (min-width: 1024px) {
+  #select-resto .resto {
+    margin: 0;
+  }
 }
 #select-resto .resto .resto_badge {
   padding: 0.5rem;

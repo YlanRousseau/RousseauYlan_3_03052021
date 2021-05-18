@@ -61,14 +61,20 @@ body {
     font-family: Shrikhand, sans-serif;
 }
 
-.choix_menu h3 {
+.menu_type {
+    position: relative;
     font-weight: 400;
     margin: 3rem 0 1.5rem;
-    >h3::after {
-        display: block;
-        content: "defjd";
-        border: 3px solid green;
-    }
+}
+
+.menu_type::after {
+    content: "";
+    width: 2.85rem;
+    height: .22rem;
+    background-color: #99e2d0;
+    position: absolute;
+    top: 25px;
+    left: 0px;
 }
 
 .menu_plat {

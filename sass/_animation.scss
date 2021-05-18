@@ -1,0 +1,11 @@
+.explore_btn:hover {
+    transform: scale(1.5);
+}
+
+.tutoriel:hover {
+    background-color: lighten($color: $primary-color, $amount: 35%);
+}
+
+footer li a:hover {
+    text-decoration: underline;
+}

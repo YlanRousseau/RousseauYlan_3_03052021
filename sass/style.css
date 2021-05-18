@@ -73,11 +73,13 @@ footer .footer_icon2 {
 }
 #explore .explore_btn {
   padding: 0.75rem 1.5rem;
-  border: 1px solid white;
+  border: 0 solid;
+  background-color: black;
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
   border-radius: 2rem;
   color: white;
   text-decoration: none;
+  box-shadow: 0.25rem 0.25rem 0.25rem 0.15rem #0000002e;
 }
 
 #choice {
@@ -90,6 +92,10 @@ footer .footer_icon2 {
 }
 .contenant > h2 {
   margin: 0;
+}
+.contenant > h3 {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
 }
 
 .fonctionnement > button {
@@ -205,6 +211,18 @@ footer .footer_icon2 {
 }
 #select-resto .resto_footer .resto_like .fa-heart {
   font-size: 2rem;
+}
+
+.explore_btn:hover {
+  transform: scale(1.5);
+}
+
+.tutoriel:hover {
+  background-color: #f2eafb;
+}
+
+footer li a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */

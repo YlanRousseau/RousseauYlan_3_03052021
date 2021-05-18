@@ -1,0 +1,103 @@
+body {
+    margin: auto;
+}
+
+.header_logo {
+    padding: 1rem;
+    box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
+}
+
+.header_link {
+    position: relative;
+    >a {
+        color: black;
+        font-size: 1.2rem;
+        position: absolute;
+        top: 12px;
+        left: 25px;
+    }
+    >h1 {
+        margin: 0;
+        font-family: Shrikhand, sans-serif;
+        text-align: center;
+    }
+}
+
+#contenaire_menu {
+    position: relative;
+    margin: -3.2rem auto 0;
+    background-color: #f6f6f6;
+    padding: 1rem;
+    border-radius: 2rem 2rem 0 0;
+    max-width: 1250px;
+}
+
+.header_menu {
+    display: flex;
+    >i {
+        position: absolute;
+        right: 35px;
+        top: 37px;
+        font-size: 2rem;
+    }
+}
+
+.menu_img {
+    max-height: 32rem;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.header_menu h2 {
+    font-family: Shrikhand, sans-serif;
+}
+
+.choix_menu h3 {
+    font-weight: 400;
+    margin: 3rem 0 1.5rem;
+    >h3::after {
+        display: block;
+        content: "defjd";
+        border: 3px solid green;
+    }
+}
+
+.menu_plat {
+    display: flex;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: #FFFF;
+    border-radius: 0.75rem;
+    .sec_plat {
+        flex: 1;
+        .plat_title {
+            margin: 0;
+            font-weight: 500;
+        }
+        .plat_desc {
+            padding: 0;
+            margin: 0.25rem 0 0;
+            font-weight: 300;
+        }
+    }
+}
+
+.price {
+    display: flex;
+    align-items: flex-end;
+}
+
+.div_btn {
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .btn_order {
+        color: white;
+        padding: 1rem 3rem;
+        border: 0px solid;
+        border-radius: 1.5rem;
+        background-image: linear-gradient(to bottom, $secondary-color, $primary-color);
+    }
+}

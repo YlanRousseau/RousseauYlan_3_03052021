@@ -68,6 +68,7 @@
         margin: 1.5rem 0 0 -2rem;
         position: relative;
         box-shadow: 0.25rem 0.25rem 0.5rem #0000002e;
+        transition-duration: 0.3s;
         @media (min-width: 1024px) {
             margin: 1.5rem;
             flex: 1;
@@ -125,6 +126,7 @@
         margin: 2rem 0;
         border-radius: 1rem;
         text-decoration: none;
+        transition-duration: 0.3s;
         @media (min-width: 1024px) {
             margin: 0;
         }

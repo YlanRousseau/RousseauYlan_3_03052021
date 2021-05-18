@@ -213,10 +213,6 @@ footer .footer_icon2 {
   font-size: 2rem;
 }
 
-.explore_btn:hover {
-  transform: scale(1.5);
-}
-
 .tutoriel:hover {
   background-color: #f2eafb;
 }

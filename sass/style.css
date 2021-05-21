@@ -293,6 +293,7 @@ body {
   flex-direction: column;
   width: 100%;
   background-color: white;
+  box-shadow: 0.25rem 0.25rem 0.5rem #0000002e;
   margin: 2rem 0;
   border-radius: 1rem;
   text-decoration: none;

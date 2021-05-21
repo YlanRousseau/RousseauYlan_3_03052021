@@ -334,6 +334,7 @@ body {
 }
 #select-resto .resto_footer .resto_like .fa-heart {
   font-size: 2rem;
+  color: #FF79DA;
 }
 
 .tutoriel:hover {

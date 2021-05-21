@@ -1,0 +1,19 @@
+{
+    "name": "toto",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "sass": "sass --watch ./sass/main.scss:./styles/style.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/YlanRousseau/RousseauYlan_3_03052021.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/YlanRousseau/RousseauYlan_3_03052021/issues"
+    },
+    "homepage": "https://github.com/YlanRousseau/RousseauYlan_3_03052021#readme"
+}

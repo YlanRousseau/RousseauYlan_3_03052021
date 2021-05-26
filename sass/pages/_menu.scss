@@ -78,13 +78,14 @@ body {
 }
 
 .menu_plat {
+    overflow: hidden;
     display: flex;
     margin-top: 1rem;
     padding: 0.75rem;
     background-color: #FFFF;
     border-radius: 0.75rem;
     box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
-    .sec_plat {
+    .menu_description {
         flex: 1;
         .plat_title {
             margin: 0;
@@ -101,6 +102,30 @@ body {
 .price {
     display: flex;
     align-items: flex-end;
+}
+
+.menu_confirmation {
+    align-items: center;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    background-color: #99e2d0;
+    margin: -1rem -5rem -1rem 1rem;
+    transition-duration: 0.5s;
+    .plat_icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 1.6rem;
+        width: 1.6rem;
+        border-radius: 1.5rem;
+        background-color: #FFFF;
+        transform: rotate(180deg);
+        transition-duration: 0.5s;
+        .fa-check {
+            color: $tertiary-colors;
+        }
+    }
 }
 
 .div_btn {

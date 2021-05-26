@@ -124,6 +124,7 @@ body {
 }
 
 .menu_plat {
+  overflow: hidden;
   display: flex;
   margin-top: 1rem;
   padding: 0.75rem;
@@ -131,14 +132,14 @@ body {
   border-radius: 0.75rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
 }
-.menu_plat .sec_plat {
+.menu_plat .menu_description {
   flex: 1;
 }
-.menu_plat .sec_plat .plat_title {
+.menu_plat .menu_description .plat_title {
   margin: 0;
   font-weight: 500;
 }
-.menu_plat .sec_plat .plat_desc {
+.menu_plat .menu_description .plat_desc {
   padding: 0;
   margin: 0.25rem 0 0;
   font-weight: 300;
@@ -147,6 +148,30 @@ body {
 .price {
   display: flex;
   align-items: flex-end;
+}
+
+.menu_confirmation {
+  align-items: center;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  background-color: #99e2d0;
+  margin: -1rem -5rem -1rem 1rem;
+  transition-duration: 0.5s;
+}
+.menu_confirmation .plat_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.6rem;
+  width: 1.6rem;
+  border-radius: 1.5rem;
+  background-color: #FFFF;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+.menu_confirmation .plat_icon .fa-check {
+  color: #99E2D0;
 }
 
 .div_btn {
@@ -163,7 +188,7 @@ body {
   color: white;
   text-decoration: none;
   box-shadow: 0.25rem 0.25rem 0.5rem #0000002e;
-  transition-duration: 0.5ms;
+  transition-duration: 0.3s;
 }
 .div_btn .btn_order:hover {
   background-color: white;
@@ -205,7 +230,7 @@ body {
   color: white;
   text-decoration: none;
   box-shadow: 0.25rem 0.25rem 0.5rem #0000002e;
-  transition-duration: 0.5ms;
+  transition-duration: 0.3s;
 }
 #explore .explore_btn:hover {
   background-color: white;
@@ -344,7 +369,7 @@ body {
 }
 #select-resto .resto_footer .resto_like .fa-heart {
   font-size: 2rem;
-  color: #FF79DA;
+  color: linear-gradient(to bottom, #FF79DA, #9356DC);
 }
 
 .tutoriel:hover {
@@ -357,6 +382,14 @@ footer li a:hover {
 
 .resto:hover {
   transform: scale(1.03);
+}
+
+.menu_plat:hover .menu_confirmation {
+  margin-right: -1rem;
+}
+
+.menu_plat:hover .plat_icon {
+  transform: rotate(0);
 }
 
 /*# sourceMappingURL=style.css.map */

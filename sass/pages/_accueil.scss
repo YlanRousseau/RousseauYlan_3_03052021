@@ -154,7 +154,7 @@
             margin-top: 0.3rem;
             .fa-heart {
                 font-size: 2rem;
-                color: $secondary-color;
+                color: linear-gradient(to bottom, $secondary-color, $primary-color);
             }
         }
     }

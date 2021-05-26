@@ -12,3 +12,9 @@
         box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
     }
 }
+
+@mixin ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

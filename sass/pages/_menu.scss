@@ -61,6 +61,12 @@ body {
     font-family: Shrikhand, sans-serif;
 }
 
+.choix_menu {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0.5rem;
+}
+
 .menu_type {
     position: relative;
     font-weight: 400;
@@ -85,16 +91,20 @@ body {
     background-color: #FFFF;
     border-radius: 0.75rem;
     box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
-    .menu_description {
+    cursor: pointer;
+    .sec_plat {
         flex: 1;
+        @include ellipsis;
         .plat_title {
             margin: 0;
             font-weight: 500;
+            @include ellipsis;
         }
         .plat_desc {
             padding: 0;
             margin: 0.25rem 0 0;
             font-weight: 300;
+            @include ellipsis;
         }
     }
 }
@@ -102,6 +112,7 @@ body {
 .price {
     display: flex;
     align-items: flex-end;
+    padding-left: 0.5rem;
 }
 
 .menu_confirmation {

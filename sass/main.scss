@@ -1,4 +1,6 @@
-@import "_all";
-@import "_menu";
-@import "_accueil";
-@import "_animation";
+@import "utils/variables";
+@import "utils/mixins";
+@import "layout/all";
+@import "pages/menu";
+@import "pages/accueil";
+@import "utils/animation";

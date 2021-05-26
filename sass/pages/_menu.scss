@@ -109,12 +109,6 @@ body {
     justify-content: center;
     align-items: center;
     .btn_order {
-        color: white;
-        padding: 1rem 3rem;
-        border: 0px solid;
-        border-radius: 1.5rem;
-        background-image: linear-gradient(to bottom, $secondary-color, $primary-color);
-        font-size: 1rem;
-        font-weight: 500;
+        @include button;
     }
 }

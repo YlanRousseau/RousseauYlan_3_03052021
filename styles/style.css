@@ -156,13 +156,18 @@ body {
   align-items: center;
 }
 .div_btn .btn_order {
+  padding: 0.75rem 2.2rem;
+  background-color: black;
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.95), rgba(255, 121, 218, 0.95));
+  border-radius: 2rem;
   color: white;
-  padding: 1rem 3rem;
-  border: 0px solid;
-  border-radius: 1.5rem;
-  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
-  font-size: 1rem;
-  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0.25rem 0.25rem 0.5rem #0000002e;
+  transition-duration: 0.5ms;
+}
+.div_btn .btn_order:hover {
+  background-color: white;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 }
 
 .localisation {
@@ -193,14 +198,18 @@ body {
   margin: 1.5rem 0;
 }
 #explore .explore_btn {
-  padding: 0.75rem 1.5rem;
-  border: 0 solid;
+  padding: 0.75rem 2.2rem;
   background-color: black;
-  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.95), rgba(255, 121, 218, 0.95));
   border-radius: 2rem;
   color: white;
   text-decoration: none;
-  box-shadow: 0.25rem 0.25rem 0.25rem 0.15rem #0000002e;
+  box-shadow: 0.25rem 0.25rem 0.5rem #0000002e;
+  transition-duration: 0.5ms;
+}
+#explore .explore_btn:hover {
+  background-color: white;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 }
 
 #choice {

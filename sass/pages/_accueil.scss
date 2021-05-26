@@ -25,14 +25,7 @@
         margin: 1.5rem 0;
     }
     .explore_btn {
-        padding: .75rem 1.5rem;
-        border: 0 solid;
-        background-color: black;
-        background-image: linear-gradient(to bottom, $secondary-color, $primary-color);
-        border-radius: 2rem;
-        color: white;
-        text-decoration: none;
-        box-shadow: 0.25rem 0.25rem 0.25rem 0.15rem #0000002e;
+        @include button;
     }
 }
 

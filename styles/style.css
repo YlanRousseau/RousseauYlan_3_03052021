@@ -406,4 +406,49 @@ footer li a:hover {
   transform: rotate(0);
 }
 
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  animation: loader 0.02s;
+  animation-delay: 2.25s;
+  animation-fill-mode: forwards;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader > div {
+  background-color: #9356DC;
+  height: 32px;
+  width: 16px;
+  margin-left: 10px;
+  animation: loader 1.3s infinite;
+}
+
+@keyframes loader {
+  50% {
+    height: 64px;
+  }
+  100% {
+    z-index: -1;
+    opacity: 0;
+  }
+}
+.loader div:nth-child(1) {
+  background: #9356DC;
+  animation-delay: 0s;
+}
+
+.loader div:nth-child(2) {
+  background: #FF79DA;
+  animation-delay: 0.25s;
+}
+
+.loader div:nth-child(3) {
+  background: #99E2D0;
+  animation-delay: 0.5s;
+}
+
 /*# sourceMappingURL=style.css.map */

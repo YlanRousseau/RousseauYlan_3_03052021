@@ -17,3 +17,49 @@ footer li a:hover {
 .menu_plat:hover .plat_icon {
     transform: rotate(0);
 }
+
+.loader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(0, 0%, 100%, .85);
+    animation: loader 0.02s;
+    animation-delay: 2.25s;
+    animation-fill-mode: forwards;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    >div {
+        background-color: $primary-color;
+        height: 32px;
+        width: 16px;
+        margin-left: 10px;
+        animation: loader 1.3s infinite;
+    }
+}
+
+@keyframes loader {
+    50% {
+        height: 64px;
+    }
+    100% {
+        z-index: -1;
+        opacity: 0;
+    }
+}
+
+.loader div:nth-child(1) {
+    background: $primary-color;
+    animation-delay: 0s;
+}
+
+.loader div:nth-child(2) {
+    background: $secondary-color;
+    animation-delay: 0.25s;
+}
+
+.loader div:nth-child(3) {
+    background: $tertiary-colors;
+    animation-delay: 0.50s;
+}

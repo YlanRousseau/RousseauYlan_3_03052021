@@ -126,7 +126,35 @@ body {
   top: 25px;
   left: 0px;
 }
-.choix_menu .menu_plat {
+.choix_menu .delay-0 {
+  animation-delay: 0s;
+}
+.choix_menu .delay-1 {
+  animation-delay: 0.2s;
+}
+.choix_menu .delay-2 {
+  animation-delay: 0.4s;
+}
+.choix_menu .delay-3 {
+  animation-delay: 0.6s;
+}
+.choix_menu .delay-4 {
+  animation-delay: 0.8s;
+}
+.choix_menu .delay-5 {
+  animation-delay: 1s;
+}
+.choix_menu .delay-6 {
+  animation-delay: 1.2s;
+}
+.choix_menu .delay-7 {
+  animation-delay: 1.4s;
+}
+.choix_menu .delay-8 {
+  animation-delay: 1.6s;
+}
+
+.menu_plat {
   overflow: hidden;
   display: flex;
   margin-top: 1rem;
@@ -135,21 +163,22 @@ body {
   border-radius: 0.75rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  max-width: 100%;
 }
-.choix_menu .menu_plat .sec_plat {
+.menu_plat .sec_plat {
   flex: 1;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
-.choix_menu .menu_plat .sec_plat .plat_title {
+.menu_plat .sec_plat .plat_title {
   margin: 0;
   font-weight: 500;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
-.choix_menu .menu_plat .sec_plat .plat_desc {
+.menu_plat .sec_plat .plat_desc {
   padding: 0;
   margin: 0.25rem 0 0;
   font-weight: 300;
@@ -369,6 +398,7 @@ body {
   border-radius: 1rem 1rem 0 0;
 }
 #select-resto .resto_footer {
+  position: relative;
   display: flex;
   padding: 1rem;
 }
@@ -380,10 +410,17 @@ body {
 }
 #select-resto .resto_footer .resto_like {
   margin-top: 0.3rem;
-}
-#select-resto .resto_footer .resto_like .fa-heart {
+  position: absolute;
   font-size: 2rem;
-  color: linear-gradient(to bottom, #FF79DA, #9356DC);
+  right: 1rem;
+  opacity: 0;
+}
+#select-resto .resto_footer .color_like {
+  margin-top: 0.3rem;
+  position: absolute;
+  font-size: 2rem;
+  right: 1rem;
+  opacity: 1;
 }
 
 .tutoriel:hover {
@@ -410,7 +447,7 @@ footer li a:hover {
   position: fixed;
   height: 100%;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: white;
   animation: loader 0.02s;
   animation-delay: 2.25s;
   animation-fill-mode: forwards;
@@ -449,6 +486,23 @@ footer li a:hover {
 .loader div:nth-child(3) {
   background: #99E2D0;
   animation-delay: 0.5s;
+}
+
+.menu_plat {
+  animation: apparition 1.6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes apparition {
+  0% {
+    margin-top: 7%;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 1rem;
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

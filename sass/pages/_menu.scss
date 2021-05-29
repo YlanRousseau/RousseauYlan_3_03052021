@@ -79,29 +79,58 @@ body {
         top: 25px;
         left: 0px;
     }
-    .menu_plat {
-        overflow: hidden;
-        display: flex;
-        margin-top: 1rem;
-        padding: 0.75rem;
-        background-color: #FFFF;
-        border-radius: 0.75rem;
-        box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
-        cursor: pointer;
-        .sec_plat {
-            flex: 1;
+    .delay-0 {
+        animation-delay: 0s;
+    }
+    .delay-1 {
+        animation-delay: 0.2s;
+    }
+    .delay-2 {
+        animation-delay: 0.4s;
+    }
+    .delay-3 {
+        animation-delay: 0.6s;
+    }
+    .delay-4 {
+        animation-delay: 0.8s;
+    }
+    .delay-5 {
+        animation-delay: 1s;
+    }
+    .delay-6 {
+        animation-delay: 1.2s;
+    }
+    .delay-7 {
+        animation-delay: 1.4s;
+    }
+    .delay-8 {
+        animation-delay: 1.6s;
+    }
+}
+
+.menu_plat {
+    overflow: hidden;
+    display: flex;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: #FFFF;
+    border-radius: 0.75rem;
+    box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
+    cursor: pointer;
+    max-width: 100%;
+    .sec_plat {
+        flex: 1;
+        @include ellipsis;
+        .plat_title {
+            margin: 0;
+            font-weight: 500;
             @include ellipsis;
-            .plat_title {
-                margin: 0;
-                font-weight: 500;
-                @include ellipsis;
-            }
-            .plat_desc {
-                padding: 0;
-                margin: 0.25rem 0 0;
-                font-weight: 300;
-                @include ellipsis;
-            }
+        }
+        .plat_desc {
+            padding: 0;
+            margin: 0.25rem 0 0;
+            font-weight: 300;
+            @include ellipsis;
         }
     }
 }

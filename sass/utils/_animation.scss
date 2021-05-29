@@ -22,7 +22,7 @@ footer li a:hover {
     position: fixed;
     height: 100%;
     width: 100%;
-    background-color: hsla(0, 0%, 100%, .85);
+    background-color: hsla(0, 0%, 100%, 1);
     animation: loader 0.02s;
     animation-delay: 2.25s;
     animation-fill-mode: forwards;
@@ -62,4 +62,21 @@ footer li a:hover {
 .loader div:nth-child(3) {
     background: $tertiary-colors;
     animation-delay: 0.50s;
+}
+
+.menu_plat {
+    animation: apparition 1.6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+@keyframes apparition {
+    0% {
+        margin-top: 7%;
+        opacity: 0;
+    }
+    100% {
+        margin-top: 1rem;
+        opacity: 1;
+    }
 }

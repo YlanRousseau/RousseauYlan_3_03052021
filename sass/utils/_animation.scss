@@ -65,18 +65,36 @@ footer li a:hover {
 }
 
 .menu_plat {
-    animation: apparition 1.6s;
+    animation: apparition 0.75s;
+    animation-timing-function: cubic-bezier(.5, 1.58, .34, .82);
     animation-iteration-count: 1;
     animation-fill-mode: both;
 }
 
 @keyframes apparition {
     0% {
-        margin-top: 7%;
+        transform: scale(0.95);
         opacity: 0;
     }
     100% {
-        margin-top: 1rem;
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.fa-heart:hover {
+    animation: remplir .25s ease-in-out;
+    background: linear-gradient(to bottom, $secondary-color, $primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+@keyframes remplir {
+    0% {
+        opacity: 0;
+    }
+    100% {
         opacity: 1;
     }
 }

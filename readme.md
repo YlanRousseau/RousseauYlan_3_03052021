@@ -41,12 +41,14 @@ PAGES DE MENU
 À l’arrivée sur la page, les plats devront apparaître progressivement avec un léger décalage dans le temps. Ils pourront soit apparaître un par un, soit par groupe “Entrées”, “Plats” et “Desserts”.
 Le visiteur peut ajouter les plats qu'il souhaite à sa commande en cliquant dessus. Cela fait apparaître une petite coche à droite du plat. Cette coche devra coulisser de la droite vers la gauche. Pour cette première version, l’effet peut apparaître au survol au lieu du clic. Si l’intitulé du plat est trop long, il devra être rogné avec des points de suspension.
 
--TECHNOLOGIES
+
+
+TECHNOLOGIES
 
 - Autorisées : HTML, CSS, préprocesseur CSS (ex: Sass)
 - Interdites : JavaScript, inline CSS
 
--IDENTITÉ GRAPHIQUES
+IDENTITÉ GRAPHIQUES
 
 Polices :
 - Logo et titres : Shrikhand
@@ -58,7 +60,7 @@ Couleurs :
 - Tertiaire: #99E2D0
 
 
--COMPATIBILITÉ
+COMPATIBILITÉ
 
 Sur tablette et desktop, le site devra s’adapter, mais ces supports n’étant pas prioritaires, leur mise en page est libre.
 

@@ -1,4 +1,4 @@
-Projet 3 du parcours Développeur web d'OpenClassrooms : Dynamiser un site web avec des animations CSS
+# Projet 3 du parcours Développeur web d'OpenClassrooms : Dynamiser un site web avec des animations CSS
 
 
 Compétences évaluées :
@@ -15,7 +15,7 @@ OBJECTIFS
 
 
 
-LIVRABLES
+# LIVRABLES
 
 Pages à intégrer :
 
@@ -43,7 +43,7 @@ Le visiteur peut ajouter les plats qu'il souhaite à sa commande en cliquant des
 
 
 
-TECHNOLOGIES
+# TECHNOLOGIES
 
 - Autorisées : HTML, CSS, préprocesseur CSS (ex: Sass)
 - Interdites : JavaScript, inline CSS

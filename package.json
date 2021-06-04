@@ -4,7 +4,9 @@
     "description": "P3",
     "main": "index.js",
     "scripts": {
-        "sass": "sass --watch ./sass/main.scss:./styles/style.css"
+        "sass": "sass --watch ./sass/main.scss:./styles/style.css",
+        "prefix": "postcss ./styles/style.css --use autoprefixer -d ./styles/prefixed/"
+
     },
     "repository": {
         "type": "git",
@@ -18,8 +20,5 @@
     "homepage": "https://github.com/YlanRousseau/RousseauYlan_3_03052021#readme",
     "dependencies": {
         "autoprefixer": "^10.2.6"
-    },
-    "devDependencies": {
-        "postcss-cli": "^8.3.1"
     }
 }

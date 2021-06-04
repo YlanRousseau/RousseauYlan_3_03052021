@@ -1,7 +1,7 @@
 {
-    "name": "toto",
+    "name": "projet3",
     "version": "1.0.0",
-    "description": "",
+    "description": "P3",
     "main": "index.js",
     "scripts": {
         "sass": "sass --watch ./sass/main.scss:./styles/style.css"
@@ -15,5 +15,11 @@
     "bugs": {
         "url": "https://github.com/YlanRousseau/RousseauYlan_3_03052021/issues"
     },
-    "homepage": "https://github.com/YlanRousseau/RousseauYlan_3_03052021#readme"
+    "homepage": "https://github.com/YlanRousseau/RousseauYlan_3_03052021#readme",
+    "dependencies": {
+        "autoprefixer": "^10.2.6"
+    },
+    "devDependencies": {
+        "postcss-cli": "^8.3.1"
+    }
 }

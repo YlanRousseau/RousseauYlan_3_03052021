@@ -10,7 +10,7 @@ body {
 }
 .header_header ._logo {
   text-align: center;
-  font-family: Shrikhand;
+  font-family: Shrikhand, sans-serif;
   margin: 0;
 }
 
@@ -21,7 +21,7 @@ footer {
 }
 footer h3 {
   margin: 0;
-  font-family: Shrikhand;
+  font-family: Shrikhand, sans-serif;
   font-size: 1.1rem;
 }
 footer ul {
@@ -124,7 +124,7 @@ body {
   background-color: #99E2D0;
   position: absolute;
   top: 25px;
-  left: 0px;
+  left: 0;
 }
 .choix_menu .delay-0 {
   animation-delay: 0s;
@@ -366,7 +366,6 @@ body {
   }
 }
 #select-resto .resto {
-  display: block;
   position: relative;
   color: black;
   display: flex;

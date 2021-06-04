@@ -77,7 +77,7 @@ body {
         background-color: $tertiary-colors;
         position: absolute;
         top: 25px;
-        left: 0px;
+        left: 0;
     }
     @for $i from 0 through 9 {
         .delay-#{$i} {

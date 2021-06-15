@@ -612,6 +612,7 @@ footer li a:hover {
     -webkit-animation: remplir 0.25s ease-in-out;
     animation: remplir 0.25s ease-in-out;
     background: linear-gradient(to bottom, #FF79DA, #9356DC);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;

@@ -86,6 +86,7 @@ footer li a:hover {
     cursor: pointer;
     animation: remplir .25s ease-in-out;
     background: linear-gradient(to bottom, $secondary-color, $primary-color);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;

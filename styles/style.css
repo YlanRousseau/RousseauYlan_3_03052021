@@ -307,6 +307,7 @@ body {
   border-radius: 1rem;
 }
 .fonctionnement .tutoriel {
+  cursor: pointer;
   counter-increment: my-awesome-counter;
   padding: 1.5rem;
   background-color: #f6f6f6;
@@ -512,6 +513,7 @@ footer li a:hover {
   cursor: pointer;
   animation: remplir 0.25s ease-in-out;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
